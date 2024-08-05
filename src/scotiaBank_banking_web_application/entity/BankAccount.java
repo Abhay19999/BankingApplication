@@ -1,5 +1,8 @@
 package scotiaBank_banking_web_application.entity;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class BankAccount {
     private long accountNumber;
     private String accountHolderName;
@@ -8,7 +11,8 @@ public class BankAccount {
     private String addressLine2;
     private String city;
     private String state;
-    private double accountBalance;
+    public double accountBalance;
+    ArrayList<String> statement;
 
     public long getAccountNumber() {
         return accountNumber;
@@ -73,6 +77,5 @@ public class BankAccount {
     public void setAccountBalance(double accountBalance) {
         this.accountBalance = accountBalance;
     }
-
 
 }
